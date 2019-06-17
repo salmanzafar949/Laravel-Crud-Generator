@@ -30,7 +30,9 @@ php artisan vendor:publish --provider="Salman\CrudGenerator\CrudGeneratorService
 
 After publsihing the configuration file just run the below command
 
-`php artisan crud:generate ModelName`
+```
+php artisan crud:generate ModelName
+```
 
 just it all of your `Model Controller, Migration, routes` and `Request` will be created automatically with all the code required for operations
 
