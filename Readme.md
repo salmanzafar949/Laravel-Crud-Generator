@@ -28,7 +28,7 @@ php artisan vendor:publish --provider="Salman\CrudGenerator\CrudGeneratorService
 
 ## Usage
 
-After publsihing the configuration file just run the below command
+After publishing the configuration file just run the below command
 
 ```
 php artisan crud:generate ModelName
