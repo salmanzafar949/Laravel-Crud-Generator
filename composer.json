@@ -13,7 +13,7 @@
         "laravel",
         "laravel5",
         "laravel-crud-generator",
-        "laravel-api-crud-generator",
+        "laravel-api-crud-generator"
     ],
     "require": {
         "php": ">=7.0.0"
