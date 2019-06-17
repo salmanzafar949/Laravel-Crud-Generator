@@ -3,6 +3,7 @@
 namespace Salman\CrudGenerator\Commands;
 
 use Illuminate\Console\Command;
+use Salman\CrudGenerator\CrudGeneratorClass\CrudGeneratorService;
 
 class CrudGenerator extends Command
 {
@@ -37,6 +38,14 @@ class CrudGenerator extends Command
      */
     public function handle()
     {
-        //
+        $name = $this->argument('name');
+
+        CrudGeneratorService::MakeController($name);
+        CrudGeneratorService::MakeModel($name);
+        CrudGeneratorService::MakeRequest($name);
+        CrudGeneratorService::MakeMigration($name);
+        CrudGeneratorService::MakeRoute($name);
+
+        $this->info('Crud for '. $name. ' created successfully');
     }
 }

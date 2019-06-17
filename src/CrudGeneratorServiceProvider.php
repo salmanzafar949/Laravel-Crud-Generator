@@ -14,7 +14,11 @@ class CrudGeneratorServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->loadViewsFrom(__DIR__.'/resources/stubs', 'CrudGenerator');
+
+        $this->publishes([
+            __DIR__.'/resources/stubs' => resource_path('stubs'),
+        ]);
     }
 
     /**
