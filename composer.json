@@ -1,0 +1,41 @@
+{
+    "name": "salmanzafar/laravel-crud-generator",
+    "description": "A simple Laravel 5 library that allows you to create crud operations with a single command",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Salman Zafar",
+            "email": "salmanzafar949@gmail.com"
+        }
+    ],
+    "keywords": [
+        "laravel",
+        "laravel5",
+        "laravel-crud-generator",
+        "laravel-api-crud-generator",
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "require-dev": {
+        "laravel/framework": ">=5.5"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Salman\\CrudGenerator\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Salman\\CrudGenerator\\CrudGeneratorServiceProvider"
+            ],
+            "aliases": {
+                "Mqtt": "Salman\\CrudGenerator\\Facades\\CrudGenerator"
+            }
+        }
+    }
+}
