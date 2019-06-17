@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Console\Commands;
+namespace Salman\CrudGenerator\Commands;
 
 use Illuminate\Console\Command;
 

@@ -3,6 +3,7 @@
 namespace Salman\CrudGenerator;
 
 use Illuminate\Support\ServiceProvider;
+use Salman\CrudGenerator\Commands\CrudGenerator;
 
 class CrudGeneratorServiceProvider extends ServiceProvider
 {
@@ -23,6 +24,8 @@ class CrudGeneratorServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->commands([
+           CrudGenerator::class,
+        ]);
     }
 }
