@@ -1,7 +1,11 @@
-# Laravel MQTT Package
+# Laravel CRUD Generator
 
 A simple Laravel 5 library that allows you to create crud operations with a single command
 
+## Installation
+```
+composer require salmanzafar/laravel-crud-generator
+```
 ## Features
 
 * Controller (with all the code already written)
@@ -31,3 +35,5 @@ After publsihing the configuration file just run the below command
 just it all of your `Model Controller, Migration, routes` and `Request` will be created automatically with all the code required for operations
 
 ### Tested on php 7.3 and laravel 5.7 and also laravel 5.8
+
+### Currently this package supports only CRUD operation for api's 
