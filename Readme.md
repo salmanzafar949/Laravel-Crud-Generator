@@ -34,7 +34,7 @@ After publsihing the configuration file just run the below command
 php artisan crud:generate ModelName
 ```
 
-just it all of your `Model Controller, Migration, routes` and `Request` will be created automatically with all the code required for operations
+Just it, Now all of your `Model Controller, Migration, routes` and `Request` will be created automatically with all the code required for operations
 
 ### Tested on php 7.3 and laravel 5.7 and also laravel 5.8
 
