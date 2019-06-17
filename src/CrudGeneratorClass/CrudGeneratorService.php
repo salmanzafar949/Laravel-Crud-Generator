@@ -3,6 +3,7 @@
 namespace Salman\CrudGenerator\CrudGeneratorClass;
 
 use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 
 class CrudGeneratorService
@@ -80,5 +81,16 @@ class CrudGeneratorService
     {
         Artisan::call('make:migration create_'. strtolower( Str::plural($name)).'_table --create='. strtolower( Str::plural($name)));
 
+    }
+
+    /**
+     * @param $name
+     * This will create route in api.php file
+     */
+    public static function MakeRoute($name)
+    {
+        $path_to_file  = base_path('routes/api.php');
+        $append_route = 'Route::apiResource(\'' . Str::plural(strtolower($name)) . "', '{$name}Controller'); \n";
+        File::append($path_to_file, $append_route);
     }
 }
