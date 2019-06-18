@@ -34,7 +34,7 @@
                 "Salman\\CrudGenerator\\CrudGeneratorServiceProvider"
             ],
             "aliases": {
-                "Mqtt": "Salman\\CrudGenerator\\Facades\\CrudGenerator"
+                "CrudGenerator": "Salman\\CrudGenerator\\Facades\\CrudGenerator"
             }
         }
     }
