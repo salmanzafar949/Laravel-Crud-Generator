@@ -46,6 +46,6 @@ class CrudGenerator extends Command
         CrudGeneratorService::MakeMigration($name);
         CrudGeneratorService::MakeRoute($name);
 
-        $this->info('Crud for '. $name. ' created successfully');
+        $this->info('Api Crud for '. $name. ' created successfully');
     }
 }
