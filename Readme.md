@@ -34,7 +34,7 @@ After publishing the configuration file just run the below command
 php artisan crud:generate ModelName
 ```
 
-Just it, Now all of your `Model Controller, Migration, routes` and `Request` will be created automatically with all the code required for operations
+Just it, Now all of your `Model Controller, Migration, routes` and `Request` will be created automatically with all the code required for basic crud operations
 
 ## Example
 
