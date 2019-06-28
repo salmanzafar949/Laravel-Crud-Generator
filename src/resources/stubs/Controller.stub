@@ -11,21 +11,22 @@ class {{modelName}}Controller extends Controller
     {
         ${{modelNamePluralLowerCase}} = {{modelName}}::latest()->get();
 
-        return response()->json(${{modelNamePluralLowerCase}}, 201);
+        return response(['data' => ${{modelNamePluralLowerCase}} ], 200);
     }
 
     public function store({{modelName}}Request $request)
     {
         ${{modelNameSingularLowerCase}} = {{modelName}}::create($request->all());
 
-        return response()->json(${{modelNameSingularLowerCase}}, 201);
+        return response(['data' => ${{modelNameSingularLowerCase}} ], 201);
+
     }
 
     public function show($id)
     {
         ${{modelNameSingularLowerCase}} = {{modelName}}::findOrFail($id);
 
-        return response()->json(${{modelNameSingularLowerCase}});
+        return response(['data', ${{modelNameSingularLowerCase}} ], 200);
     }
 
     public function update({{modelName}}Request $request, $id)
@@ -33,13 +34,13 @@ class {{modelName}}Controller extends Controller
         ${{modelNameSingularLowerCase}} = {{modelName}}::findOrFail($id);
         ${{modelNameSingularLowerCase}}->update($request->all());
 
-        return response()->json(${{modelNameSingularLowerCase}}, 200);
+        return response(['data' => ${{modelNameSingularLowerCase}} ], 200);
     }
 
     public function destroy($id)
     {
         {{modelName}}::destroy($id);
 
-        return response()->json(null, 204);
+        return response(['data' => null ], 204);
     }
 }
