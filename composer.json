@@ -1,6 +1,6 @@
 {
     "name": "salmanzafar/laravel-crud-generator",
-    "description": "A simple Laravel 5 library that allows you to create crud operations with a single command",
+    "description": "A simple Laravel 5 and laravel 6 library that allows you to create crud operations with a single command",
     "type": "library",
     "license": "MIT",
     "authors": [
